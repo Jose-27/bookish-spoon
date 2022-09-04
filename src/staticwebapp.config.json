@@ -2,7 +2,7 @@
     "routes": [
       {
         "route": "/tables.html",
-        "allowedRoles": ["administrator"]
+        "allowedRoles": ["anonymous"]
       },
       {
         "route": "/images/*",
