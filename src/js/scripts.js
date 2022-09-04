@@ -23,7 +23,7 @@ function senderForm() {
     } else if(element.id === 'address1') {
       user['address1'] = element.value.trim();
     } else if(element.id === 'address2') {
-      user['address2'] = elemenst.value.trim();
+      user['address2'] = element.value.trim();
     } else if(element.id === 'country' && element.value !== '') {
       user['country'] = element.value.trim();
     } else if(element.id === 'state') {
