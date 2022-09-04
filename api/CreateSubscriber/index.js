@@ -21,10 +21,11 @@ module.exports = async function (context, req) {
             address2,
             country,
             state,
-            zipCode
+            zipCode,
+            senderRowKey
         } = req.body;
 
-        if(!blog || !firstName || !lastName || !trackingId || !phoneNumber || !email) {
+        if(!blog || !firstName || !lastName || !trackingId || !phoneNumber || !email || !senderRowKey) {
             context.res = {
                 status: 400,
                 body: "Please pass blog, firstName, lastName, phoneNumber, email"
@@ -54,7 +55,8 @@ module.exports = async function (context, req) {
             country: {_: country},
             state: {_: state},
             zipCode: {_: zipCode},
-            trackingId: {_: trackingId}
+            trackingId: {_: trackingId},
+            senderRowKey: {_: senderRowKey}
         }
 
         const result = await insertEntity("Post", entity);
