@@ -3,7 +3,7 @@
       {
         "route": "/tables*",
         "redirect": "/tables.html",
-        "allowedRoles": ["authenticated"]
+        "allowedRoles": ["administrator"]
       },
       {
         "route": "/images/*",
