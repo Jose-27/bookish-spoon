@@ -3,6 +3,7 @@ function senderForm() {
   var length = document.forms.length;
   let user = {
     "blog": "maryCargoExpress",
+    "trackingId": "5e40d4d2-4081-4607-b8d5-02018287e45a",
     "senderType": "sender"
   }
   for(var i = 0; i < length; i++) {
@@ -40,6 +41,7 @@ function receiverForm() {
   var length = document.forms.length;
   let user = {
     "blog": "maryCargoExpress",
+    "trackingId": "5e40d4d2-4081-4607-b8d5-02018287e45a",
     "clientType": "receiver"
   }
   for(var i = 0; i < length; i++) {
