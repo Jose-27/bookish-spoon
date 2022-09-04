@@ -25,7 +25,7 @@ module.exports = async function (context, req) {
             senderRowKey
         } = req.body;
 
-        if(!blog || !firstName || !lastName || !trackingId || !phoneNumber || !email) {
+        if(!blog || !firstName || !lastName || !phoneNumber || !email) {
             context.res = {
                 status: 400,
                 body: "Please pass blog, firstName, lastName, phoneNumber, email"
