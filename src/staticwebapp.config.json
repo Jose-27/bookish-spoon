@@ -1,7 +1,8 @@
 {
     "routes": [
       {
-        "route": "/tables.html",
+        "route": "/tables*",
+        "redirect": "/tables.html",
         "allowedRoles": ["authenticated"]
       },
       {
